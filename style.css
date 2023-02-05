@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*General styling*/
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "fraunces";
+}
+
+#ratingContainer {
+  background-color: hsl(220, 37%, 16%);
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.2rem;
+  max-width: 330px;
+  border-radius: 20px;
+}
+
+.star {
+  background-color: hsl(213, 19%, 18%);
+  padding: 10px;
+  width: fit-content;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.star[data-icon="star-icon"]::before {
+  content: "";
+  height: 16px;
+  width: 17px;
+  background-image: url(images/icon-star.svg);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  font-size: 0.71rem;
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+}
+
+.rate {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.rateButton {
+  background-color: hsl(213, 19%, 18%);
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.rateButton:hover {
+  background-color: hsl(217, 12%, 63%);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: hsl(25, 97%, 53%);
+}
+
+#mySubmit {
+  padding: 6px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 100px;
+  border: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+#mySubmit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+#thankYou {
+  background-color: hsl(220, 37%, 16%);
+  padding: 1.7rem;
+  display: none;
+  gap: 0.8rem;
+  max-width: 340px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.illustration {
+  width: fit-content;
+  display: inline-flex;
+  margin: auto;
+}
+
+.illustration[data-icon="illustration-icon"]::before {
+  content: "";
+  height: 108px;
+  width: 162px;
+  background-image: url(images/illustration-thank-you.svg);
+}
+
+.ratings {
+  color: hsl(25, 97%, 53%);
+  margin: auto;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
